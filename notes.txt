@@ -1,0 +1,32 @@
+function handleEditClick(){
+      setIsEditing(isEditing ? false : true)
+    }
+
+this is the same as 
+ function handleEditClick(){
+      setIsEditing(!isEditing)
+    }
+
+best practice 
+    function handleEditClick(){
+      setIsEditing((editing) => !editing)
+    }
+
+
+
+function handleChange(event) {
+        setPlayerName(event.target.value)
+} ---- the value here is the playerName
+
+
+//   const [gameBoard,setGameBoard] = useState(inititalGameBoard)
+
+//   function handleSelectSquare(rowIndex,colIndex) {
+//     setGameBoard((prevGameBoard) => {
+//         const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])]
+//         updatedBoard[rowIndex][colIndex] = activePlayerSymbol; 
+//         return updatedBoard;
+//     });
+
+//     onSelectSquare();
+//   }
