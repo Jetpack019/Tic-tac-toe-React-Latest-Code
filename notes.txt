@@ -30,3 +30,8 @@ function handleChange(event) {
 
 //     onSelectSquare();
 //   }
+
+
+  // const [hasWinner,setHasWinner] = useState(false);
+  // const [activePlayer,setActivePlayer] = useState('X');
+      // setActivePlayer((curActivePlayer) => curActivePlayer === 'X' ? 'O' : 'X');
